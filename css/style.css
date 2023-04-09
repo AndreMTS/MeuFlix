@@ -1,25 +1,25 @@
-.input-busca {
+.form__input {
 	outline: none !important;
 	border: none !important;
 }
 
-.form-busca {
+.form-search {
 	display: flex;
 	border-radius: 10px;
 }
 
-.form-busca input {
+.form-search input {
 	flex: 1 !important;
 }
 
-.form-busca button {
+.form-search button {
 	padding: 5px 10px;
 }
 
-.lista div{
+.list-film div{
 	border-radius: 10px;
 }
-.lista div:hover {
+.list-film div:hover {
 	background-color: #dedede;
 	cursor: pointer;
 }
