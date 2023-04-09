@@ -1,0 +1,25 @@
+.input-busca {
+	outline: none !important;
+	border: none !important;
+}
+
+.form-busca {
+	display: flex;
+	border-radius: 10px;
+}
+
+.form-busca input {
+	flex: 1 !important;
+}
+
+.form-busca button {
+	padding: 5px 10px;
+}
+
+.lista div{
+	border-radius: 10px;
+}
+.lista div:hover {
+	background-color: #dedede;
+	cursor: pointer;
+}
