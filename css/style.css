@@ -18,8 +18,23 @@
 
 .list-film div{
 	border-radius: 10px;
+	transition: background-color 0.5s;
+	transition: height 0.3s ease-in-out;
 }
+
 .list-film div:hover {
 	background-color: #dedede;
 	cursor: pointer;
+	transition: background-color 0.5s ease-in-out;
 }
+.ampliar {
+	transform: scale(1.1);
+  }
+
+  body {
+	background-image: url('caminho/para/imagem.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
