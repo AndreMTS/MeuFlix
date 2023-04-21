@@ -6,24 +6,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         type="text/css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            background-image: url('./img/01.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* aqui você pode ajustar o valor do alpha para tornar o overlay mais ou menos transparente */
+            z-index: -1;
+            /* para enviar o overlay para o fundo, atrás de todos os outros elementos */
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Filmes</h1>
-    <div class="container">
-        <div class="mt-3">
-            <form class="form-search p-2 border border-2 rounded-4" method="GET">
-                <input class="form__input" type="text" name="filme" placeholder="Digite o nome do filme">
-                <button type="submit" class="form__submit btn btn-primary ">Pesquisar</button>
-            </form>
+<body class="container">
+    <section class="background">
+        <div class="row align-items-center movie-form bg-dark p-3 m-4 rounded-3">
+            <span class="col-3 titulo h1 text-white">MeuFlix</span>
+            <div class="col-9 form">
+                <form class="form-search p-1 rounded-4" method="GET">
+                    <input class="form__input" type="text" name="filme" placeholder="Digite o nome do filme">
+                    <button type="submit" class="form__submit btn btn-primary ">Pesquisar</button>
+                </form>
+            </div>
         </div>
-        <div class="row mt-3 p-3 list-film">
-            <!-- javascript esta montando aqui os cards dos filmes -->
+        <div class="card-film">
+            <div class="row list-film movie-cards central">
+                <!-- javascript esta montando aqui os cards dos filmes -->
+            </div>
         </div>
-    </div>
+    </section>
+</body>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
-    
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>

@@ -1,3 +1,9 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .form__input {
 	outline: none !important;
 	border: none !important;
@@ -16,7 +22,7 @@
 	padding: 5px 10px;
 }
 
-.list-film div{
+.list-film div {
 	border-radius: 10px;
 	transition: background-color 0.5s;
 	transition: height 0.3s ease-in-out;
@@ -27,14 +33,29 @@
 	cursor: pointer;
 	transition: background-color 0.5s ease-in-out;
 }
-.ampliar {
-	transform: scale(1.1);
-  }
 
-  body {
-	background-image: url('caminho/para/imagem.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-  }
-  
+.text-film {
+	font-size: 25px;
+	color: rgb(18, 139, 219);
+	text-align: center;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif
+}
+
+.text-film-w {
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+.central {
+	display: flex;
+	justify-content: center;
+
+}
+.card-film-style {
+	padding: 50px;
+background-color: rgba(255, 255, 255, 0.5);
+}
